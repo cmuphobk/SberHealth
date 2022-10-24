@@ -1,0 +1,7 @@
+vendor
+build
+DerivedData
+xcode-build-times-chart
+.timings.xcode
+fastlane/test_output
+fastlane/report.xml

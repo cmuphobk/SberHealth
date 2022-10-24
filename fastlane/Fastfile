@@ -1,0 +1,24 @@
+derived_data_path = "DerivedData"
+xcode_version = File.open('../.xcode-version', &:readline)
+default_platform(:ios)
+
+platform :ios do
+  before_all do |lane, options|
+    xcversion(version: xcode_version)
+  end
+
+  desc "Only build for testing"
+  lane :build_for_testing do |options|
+      scan(
+        workspace: "./SberHealth.xcworkspace",
+        scheme: "SberHealth",
+        configuration: "Debug",
+        build_for_testing: true,
+        clean: false,
+        derived_data_path: derived_data_path,
+        device: options[:device],
+        result_bundle: true
+      )
+  end
+
+end
