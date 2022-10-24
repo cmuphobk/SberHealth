@@ -7,7 +7,28 @@
 
 import UIKit
 import SHDesignSystem
+
+import SHMainApi
 import SHMain
+import SHSmartBlocksApi
+import SHSmartBlocks
+import SHStoriesApi
+import SHStories
+
+final class Dependencies: SHMainDependencies, SHSmartBlocksDependencies, SHStoriesDependencies {
+    static var shared: Dependencies { .init() }
+    private init() { }
+
+    func makeMain() -> SHMainFlow {
+        SHMainFlowImpl(dependencies: self)
+    }
+    func makeSmartBlocks() -> SHSmartBlocksFlow {
+        SHSmartBlocksFlowImpl(dependencies: self)
+    }
+    func makeStories() -> SHStoriesFlow {
+        SHStoriesFlowImpl(dependencies: self)
+    }
+}
 
 final class ViewController: UIViewController {
     override func viewDidLoad() {
@@ -26,7 +47,7 @@ final class ViewController: UIViewController {
     
     @objc
     private func buttonDidTapped(_ sender: UIButton) {
-        pushImplicity(SHMainFlowImpl().make())
+        pushImplicity(Dependencies.shared.makeMain().make())
     }
 
 }

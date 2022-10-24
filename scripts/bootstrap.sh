@@ -186,7 +186,7 @@ function bootstrap {
     tuist_install
     cloc_install
     xclogparser_install
-    bundle exec xcode-build-times uninstall .
+    tuist generate --no-open --no-cache
     bundle exec xcode-build-times install . --events-file .timings.xcode
 
     log_ok "bootstrap successfully finished!"

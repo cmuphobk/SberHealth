@@ -7,19 +7,25 @@
 
 import UIKit
 import SHDesignSystem
+import SHStoriesApi
 
-public protocol SHStoriesFlow {
-    func make() -> UIViewController
-}
+public protocol SHStoriesDependencies { }
 
 public final class SHStoriesFlowImpl: SHStoriesFlow {
-    public init() { }
+    private let dependencies: SHStoriesDependencies
+    public init(dependencies: SHStoriesDependencies) {
+        self.dependencies = dependencies
+    }
     public func make() -> UIViewController {
-        SHStoriesViewController()
+        let vc = SHStoriesViewController()
+        vc.dependencies = dependencies
+        return vc
     }
 }
 
 private final class SHStoriesViewController: UIViewController {
+    var dependencies: SHStoriesDependencies?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .red

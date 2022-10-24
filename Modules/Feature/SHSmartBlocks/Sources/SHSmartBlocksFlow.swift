@@ -7,20 +7,28 @@
 
 import UIKit
 import SHDesignSystem
-import SHStories
+import SHSmartBlocksApi
+import SHStoriesApi
 
-public protocol SHSmartBlocksFlow {
-    func make() -> UIViewController
+public protocol SHSmartBlocksDependencies {
+    func makeStories() -> SHStoriesFlow
 }
 
 public final class SHSmartBlocksFlowImpl: SHSmartBlocksFlow {
-    public init() { }
+    private let dependencies: SHSmartBlocksDependencies
+    public init(dependencies: SHSmartBlocksDependencies) {
+        self.dependencies = dependencies
+    }
     public func make() -> UIViewController {
-        SHSmartBlockViewController()
+        let vc = SHSmartBlockViewController()
+        vc.dependencies = dependencies
+        return vc
     }
 }
 
 private final class SHSmartBlockViewController: UIViewController {
+    var dependencies: SHSmartBlocksDependencies?
+
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .yellow
@@ -37,6 +45,6 @@ private final class SHSmartBlockViewController: UIViewController {
     
     @objc
     private func buttonDidTapped(_ sender: UIButton) {
-        pushImplicity(SHStoriesFlowImpl().make())
+        dependencies.flatMap { pushImplicity($0.makeStories().make()) }
     }
 }

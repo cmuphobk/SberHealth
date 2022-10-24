@@ -10,3 +10,4 @@ Derived
 *.xcworkspace
 *.xcodeproj
 .DS_Store
+**/Info.plist
