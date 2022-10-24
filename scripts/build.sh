@@ -10,6 +10,7 @@ cd ../
 bundle exec fastlane build_for_testing
 xclogparser parse --project SberHealth --reporter html --derived_data ./DerivedData --without_build_specific_information
 bundle exec xcode-build-times generate --events-file .timings.xcode
+cloc . --out=.cloc_report --exclude-dir=xcshareddata,Frameworks,Pods,vendor,Templates"
 
 # go to path from which we started executing
 cd ${from_path}

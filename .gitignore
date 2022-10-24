@@ -3,5 +3,10 @@ build
 DerivedData
 xcode-build-times-chart
 .timings.xcode
+.cloc_report
 fastlane/test_output
 fastlane/report.xml
+Derived
+*.xcworkspace
+*.xcodeproj
+.DS_Store

@@ -154,6 +154,16 @@ function xclogparser_install {
     log_ok "xclogparser successfully installed."
 }
 
+function tuist_install {
+    log "tuist installation started."
+    if ! command_exists tuist
+    then
+        curl -Ls https://install.tuist.io | bash
+    fi
+    log_ok "tuist successfully installed."
+    tuist update
+}
+
 # shared variables
 prefix=/usr/local
 bindir=$prefix/bin
@@ -173,6 +183,7 @@ function bootstrap {
     ruby_install
     bundler_install
     bundle_install
+    tuist_install
     cloc_install
     xclogparser_install
     bundle exec xcode-build-times uninstall .
