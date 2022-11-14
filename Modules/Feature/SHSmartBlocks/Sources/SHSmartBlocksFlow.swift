@@ -8,11 +8,6 @@
 import UIKit
 import SHDesignSystem
 import SHSmartBlocksApi
-import SHStoriesApi
-
-public protocol SHSmartBlocksDependencies {
-    func makeStories() -> SHStoriesFlow
-}
 
 public final class SHSmartBlocksFlowImpl: SHSmartBlocksFlow {
     private let dependencies: SHSmartBlocksDependencies

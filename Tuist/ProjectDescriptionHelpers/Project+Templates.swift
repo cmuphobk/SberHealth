@@ -30,7 +30,8 @@ extension Project {
                     product: .staticFramework,
                     bundleId: "ru.SberHealth.\(name)Api",
                     infoPlist: .extendingDefault(with: [:]),
-                    sources: ["Api/**"]
+                    sources: ["Api/**"],
+                    dependencies: dependencies
                 ),
                 Target(
                     name: name,

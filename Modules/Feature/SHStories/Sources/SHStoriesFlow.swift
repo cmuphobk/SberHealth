@@ -9,8 +9,6 @@ import UIKit
 import SHDesignSystem
 import SHStoriesApi
 
-public protocol SHStoriesDependencies { }
-
 public final class SHStoriesFlowImpl: SHStoriesFlow {
     private let dependencies: SHStoriesDependencies
     public init(dependencies: SHStoriesDependencies) {
