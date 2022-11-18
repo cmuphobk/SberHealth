@@ -1,7 +1,14 @@
 # SberHealth
-Тестовый пример для доклада
+### Тестовый пример для доклада
+Ссылка на доклад: https://youtu.be/FAv4k3vFAAw
+Ссылка на презентацию: https://miro.com/app/board/uXjVOtRHPdY=/?share_link_id=23013579594
 
-# Полезные ссылки
+### Навигация по веткам: 
+1. initial-project - Стандартный подход с .xcodeproj файлами
+2. initial-project-tuist - Стандартный подход с кодогенерацией на Tuist
+3. api-impl-way/develop - uFeature by Tuist (API/IMPL way)
+
+### Полезные ссылки
 1. Книга. Эрик Эванс «Domain driven design»
 2. Книга. Сэм Ньюмен «Building microservices»
 3. Книга. Саймон Синек «Start with Why»
