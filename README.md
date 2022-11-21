@@ -1,5 +1,6 @@
 # SberHealth
-### Тестовый пример для доклада
+### Тестовый пример для демонстрации подхода API/IMPL (в частности uFeature от Tuist)
+### Для доклада на Podlodka iOS Crew #10
 1. Ссылка на доклад: https://youtu.be/FAv4k3vFAAw
 2. Ссылка на презентацию: https://miro.com/app/board/uXjVOtRHPdY=/?share_link_id=23013579594
 
@@ -7,6 +8,17 @@
 1. initial-project - Стандартный подход с .xcodeproj файлами
 2. initial-project-tuist - Стандартный подход с кодогенерацией на Tuist
 3. api-impl-way/develop - uFeature by Tuist (API/IMPL way)
+
+### Используемые инструменты (окружение):
+1. Homebrew
+2. Rbenv
+3. Bundler
+4. Tuist
+5. fastlane
+6. Cloc
+7. xclogparser
+8. xcode-build-times 
+9. xcode-install
 
 ### Полезные ссылки
 1. Книга. Эрик Эванс «Domain driven design»
