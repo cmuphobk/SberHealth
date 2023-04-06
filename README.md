@@ -3,6 +3,7 @@
 ### Для доклада на Podlodka iOS Crew #10
 1. Ссылка на доклад: https://youtu.be/FAv4k3vFAAw
 2. Ссылка на презентацию: https://miro.com/app/board/uXjVOtRHPdY=/?share_link_id=23013579594
+3. Ссылка на первый доклад по циклу статей на хабре (если больше нравится читать): https://habr.com/ru/companies/docdoc/articles/723190/
 
 ### Навигация по веткам: 
 1. initial-project - Стандартный подход с .xcodeproj файлами
