@@ -32,10 +32,11 @@
 18. Доклад от Avito - https://youtu.be/_EC38ZzIWPo
 19. iOS Application product type - https://skyaaron.com/posts/swiftpm-app-projects/
 
-### Доклад #2. Компиляция массивного проекта. Как её готовить?
+#### Доклад #2. Компиляция массивного проекта. Как её готовить?
 **Наши статьи:**
 1. Как компании подготовиться к модуляризации iOS приложений - https://habr.com/ru/companies/docdoc/articles/723190/
 2. Многомодульное iOS-приложение: подходы к организации межмодульного взаимодействия - https://habr.com/ru/companies/docdoc/articles/735946/
+
 **Статьи от community:**
 1. Как устроена компиляция в xcode? - https://wwdcnotes.com/documentation/wwdcnotes/wwdc18-415-behind-the-scenes-of-the-xcode-build-process/
 2. WWDC 23. Meet mergeable libraries - https://developer.apple.com/wwdc23/10268
