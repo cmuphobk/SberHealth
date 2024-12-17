@@ -1,25 +1,5 @@
 # SberHealth
-### Тестовый пример для демонстрации подхода API/IMPL (в частности uFeature от Tuist)
-### Для доклада на Podlodka iOS Crew #10
-1. Ссылка на доклад: https://youtu.be/FAv4k3vFAAw
-2. Ссылка на презентацию: https://miro.com/app/board/uXjVOtRHPdY=/?share_link_id=23013579594
-3. Ссылка на первый доклад по циклу статей на хабре (если больше нравится читать): https://habr.com/ru/companies/docdoc/articles/723190/
 
-### Навигация по веткам: 
-1. initial-project - Стандартный подход с .xcodeproj файлами
-2. initial-project-tuist - Стандартный подход с кодогенерацией на Tuist
-3. api-impl-way/develop - uFeature by Tuist (API/IMPL way)
-
-### Используемые инструменты (окружение):
-1. Homebrew
-2. Rbenv
-3. Bundler
-4. Tuist
-5. fastlane
-6. Cloc
-7. xclogparser
-8. xcode-build-times 
-9. xcode-install
 
 ### Полезные ссылки
 
@@ -48,3 +28,27 @@
 8. Разобр реализации XCRemoteCache - https://engineering.atspotify.com/2021/11/introducing-xcremotecache-the-ios-remote-caching-tool-that-cut-our-clean-build-times-by-70/
 9. Explicit modules - https://xta0.me/2023/06/28/Swift-modules-1.html
 10. Explicit modules (проще) - https://bitrise.io/blog/post/demystifying-explicitly-built-modules-for-xcode
+
+---
+
+### Тестовый пример для демонстрации подхода API/IMPL (в частности uFeature от Tuist)
+### Для доклада на Podlodka iOS Crew #10
+1. Ссылка на доклад: https://youtu.be/FAv4k3vFAAw
+2. Ссылка на презентацию: https://miro.com/app/board/uXjVOtRHPdY=/?share_link_id=23013579594
+3. Ссылка на первый доклад по циклу статей на хабре (если больше нравится читать): https://habr.com/ru/companies/docdoc/articles/723190/
+
+### Навигация по веткам: 
+1. initial-project - Стандартный подход с .xcodeproj файлами
+2. initial-project-tuist - Стандартный подход с кодогенерацией на Tuist
+3. api-impl-way/develop - uFeature by Tuist (API/IMPL way)
+
+### Используемые инструменты (окружение):
+1. Homebrew
+2. Rbenv
+3. Bundler
+4. Tuist
+5. fastlane
+6. Cloc
+7. xclogparser
+8. xcode-build-times 
+9. xcode-install
