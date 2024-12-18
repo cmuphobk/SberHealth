@@ -28,6 +28,8 @@
 8. Разобр реализации XCRemoteCache - https://engineering.atspotify.com/2021/11/introducing-xcremotecache-the-ios-remote-caching-tool-that-cut-our-clean-build-times-by-70/
 9. Explicit modules - https://xta0.me/2023/06/28/Swift-modules-1.html
 10. Explicit modules (проще) - https://bitrise.io/blog/post/demystifying-explicitly-built-modules-for-xcode
+11. Как работает swift frontend - https://levelup.gitconnected.com/compilation-time-that-mixing-objective-c-with-swift-d5adab04c5d
+12. Оптимизации компилятора - https://dmtopolog.com/code-optimization-for-swift-and-objective-c/
 
 ---
 
